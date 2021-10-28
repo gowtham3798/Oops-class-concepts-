@@ -1,0 +1,115 @@
+DAY 8:
+https://github.com/rvsp/typescript-oops/blob/master/Practice/Movie.md
+https://github.com/rvsp/typescript-oops/blob/master/Practice/class-circle.md
+Write a “person” class to hold all the details.
+write a class to calculate uber price.
+
+
+
+1.
+class Movie{
+    constructor(title,rating,studio){
+        this.title=title;
+        this.rating = rating;
+        this.studio = studio;
+    }
+    getname(){
+        return "Casino Royale"
+    }
+    getstudio(){
+        return "Eon Productions"
+    }
+    
+    getpg(moviesList){
+        return moviesList.filter(a => a.rating === "PG");
+    }
+}
+let a = new Movie()
+console.log(a.getname());
+let b = new Movie()
+    console.log(b.method());
+let m1 = new Movie("Casino Royale","PG")
+let m2 = new Movie("Casi45e","P12")
+let m3 = new Movie("Ca1223e","PGasa")
+let m4 = new Movie("Rambo","PG")
+
+var array=[];
+array.push(m1);array.push(m2);array.push(m3);array.push(m4)
+
+// console.log(array);
+console.log(m1.getpg(array))
+
+2.
+class Circle{
+    setAttr(radius,color){
+        this.radius = radius;
+        this.color = color;
+        
+    }
+    getradius(radius1){
+        return radius1 = (this.radius.toFixed(1));
+    }
+    getcolor(){
+        return this.color
+    }
+    getarea(){
+        return  parseFloat(3.14*(this.radius*this.radius));
+    }
+    getcircumference(){
+        return parseFloat(2*3.14*this.radius)
+    }
+}
+
+
+let circle1 = new Circle()
+circle1.setAttr(3,"red")
+console.log(circle1.getradius())
+console.log(circle1.getcolor())
+console.log(circle1.getarea())
+console.log(circle1.getcircumference())
+
+
+
+var array=[];
+array.push(m1);array.push(m2);array.push(m3);array.push(m4)
+
+// console.log(array);
+console.log(m1.getpg(array))
+
+3.
+class Person {
+    
+    constructor(name,age) {
+        this.name = name;
+      console.log("I am " + this.name);
+         this.age=age;
+         console.log("My age is " + this.age)
+    }
+  greetings() {
+      console.log("Welcome to my profile");
+    }
+    static work(){
+        console.log("I am a Software Developer");
+    }
+    static city() {
+      console.log("City : Coimbatore");
+    }
+  }
+  
+  let person1 = new Person("Abzal","25");
+  person1.greetings();
+  Person.work();
+  Person.city(); 
+
+4.
+class Uber{
+   set(price){
+       this.price=price
+   }
+   getprice(){
+       return this.price*14;
+   }
+}
+   let kms = new Uber();
+  kms.set(1)
+  console.log(kms.getprice())
